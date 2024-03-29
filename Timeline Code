@@ -56,6 +56,7 @@ PlotData=
   bar:Sem      from:01/01/2019 till:end          color:Prod width:5
   bar:Gho      from:01/01/2019 till:01/05/2021   color:Rap
   bar:Buck     from:20/12/2020 till:end          color:Rap
+  bar:Buck     from:10/07/2020 till:05/08/2020   color:Prod
   bar:Oscar    from:12/02/2021 till:end          color:Prod
   bar:Hackle   from:16/02/2021 till:end          color:Rap
   bar:JJV      from:09/03/2021 till:08/06/2022   color:Des
