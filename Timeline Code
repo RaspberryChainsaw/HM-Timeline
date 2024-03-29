@@ -1,0 +1,66 @@
+width:800 height:auto barincrement:24
+PlotArea = left:100 bottom:80 top:0 right:15
+Alignbars = justify
+DateFormat  = dd/mm/yyyy
+Period = from:01/01/2019 till:{{#time:d/m/Y}}
+TimeAxis = orientation:horizontal format:yyyy
+Legend = orientation:vertical position:bottom columns:4
+
+Colors =
+  id:Rap     value:blue        legend:Rapper
+  id:Prod    value:green       legend:Producer
+  id:Des     value:purple      legend:Merch_Design
+  id:studio  value:black       legend:Mixtape
+  id:ep      value:gray(0.70)  legend:EP
+  id:mordor  value:gray(0.85)  legend:Mordor_single
+  id:bars    value:gray(0.95)
+
+BackgroundColors = bars:bars
+ScaleMajor = increment:1 start:2019
+ScaleMinor = unit:year increment:1 start:2019
+LineData =
+ layer:back
+  at:22/03/2019 color:mordor
+  at:16/08/2019 color:studio
+  at:08/11/2019 color:studio
+  at:20/03/2020 color:studio
+  at:01/05/2020 color:ep
+  at:31/07/2020 color:studio
+  at:29/04/2021 color:studio
+  at:29/10/2021 color:studio
+  at:25/02/2022 color:studio
+  at:10/06/2022 color:studio
+  at:31/07/2022 color:studio
+  at:08/01/2023 color:studio
+  at:26/07/2023 color:studio
+  at:29/09/2023 color:ep
+  at:08/12/2023 color:studio
+  at:01/03/2024 color:ep
+  at:29/03/2024 color:studio
+  
+Bardata =
+  bar:Sem         text:Sematary 
+  bar:Gho         text:Ghost Mountain 
+  bar:Buck        text:Buckshot 
+  bar:Oscar       text:Oscar18
+  bar:Hackle      text:Hackle
+  bar:JJV         text:JJ_Valhalla
+  bar:Grim        text:Grimoire  
+  bar:Snuffer     text:Snuffer
+  bar:Turn        text:Turnabout
+  bar:Goner       text:Gonerville
+
+PlotData=
+  width:12     textcolor:black align:left anchor:from shift:(10,-4)
+  bar:Sem      from:01/01/2019 till:end          color:Rap
+  bar:Sem      from:01/01/2019 till:end          color:Prod width:5
+  bar:Gho      from:01/01/2019 till:01/05/2021   color:Rap
+  bar:Buck     from:20/12/2020 till:end          color:Rap
+  bar:Oscar    from:12/02/2021 till:end          color:Prod
+  bar:Hackle   from:16/02/2021 till:end          color:Rap
+  bar:JJV      from:09/03/2021 till:08/06/2022   color:Des
+  bar:Grim     from:18/10/2021 till:end          color:Prod
+  bar:Snuffer  from:31/10/2021 till:19/09/2023   color:Prod
+  bar:Turn     from:14/11/2021 till:11/03/2024   color:Rap
+  bar:Goner    from:14/11/2021 till:11/03/2024   color:Prod
+  bar:Goner    from:26/07/2023 till:11/03/2024   color:Rap width:5
